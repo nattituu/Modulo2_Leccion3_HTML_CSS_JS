@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background-color: lightblue; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+  width: 400px;   /* ancho específico */
+  height: 300px;  /* alto específico */
+}
+
+/* Encabezado principal */
+header {
+    background-color: #ecebec; 
+    text-align: center;
+    padding: 20px;
+}
+
+/*Títulos barra*/
+h1 {
+    color: #fea3ce; 
+    font-size: 2.2em;
+    text-align: center;
+}
+/* Título principal */
+h2 {
+    color: #fea3ce; 
+    font-size: 2.2em;
+    text-align: center;
+}
+
+/* Título post */
+.titulopost {
+    color: red; 
+    font-size: 2.2em;
+    text-align: left;
+}
+
+/* Subtítulo */
+h3 {
+    color: #be81f7;
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    
+}
+
+/* Estilo para centrar la sección de descripción */
+.descripcion {
+  text-align: center;       
+  width: 80%;               
+  margin: 40px auto;        
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.postname {
+    text-align: left;
+}
+
+/* Sección principal */
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Cada artículo o reseña */
+article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Barra lateral */
+aside {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 20px;
+    border-left: 5px solid #fce459;
+}
+
+/* Pie de página */
+footer {
+    background-color: #fce459;
+    color: #3b3a3a;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Contenedor principal que une section y aside */
+main {
+    display: flex;              /* Activa el modo de diseño en fila */
+    justify-content: space-between; /* Espacia los elementos */
+    align-items: flex-start;    /* Alinea arriba */
+    margin: 20px;
+}
+
+/* Sección principal ocupa más espacio */
+section {
+    flex: 3;                    /* Le da más ancho */
+    margin-right: 20px;         /* Espacio entre section y aside */
+}
+
+/* Barra lateral ocupa menos espacio */
+aside {
+    flex: 1;                    /* Más angosto */
+    background-color: #ffffff;  /* Fondo suave */
+    padding: 15px;
+    border-left: 5px solid #fea3ce;
+    border-radius: 8px;
+}
+
+.circular {
+    width: 300px;           /* tamaño de la imagen */
+    height: 300px;          /* debe ser igual al ancho para que quede perfectamente circular */
+    border-radius: 50%;     /* esto la hace redonda */
+    object-fit: cover;      /* recorta y centra la imagen dentro del círculo */
+    display: block;          /* permite centrar imágenes como bloques */
+    margin: 20px auto;       /* centra horizontalmente */
+        box-shadow: 0 0 10px rgba(0,0,0,0.3); /* (opcional) sombra suave */
+}
